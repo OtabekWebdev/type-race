@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "lorem-ipsum": "^2.0.8",
+    "nodemon": "^2.0.22",
+    "random-english-words": "^0.1.0",
+    "socket.io": "^4.6.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "watch": "npx tailwindcss -i ./public/style.css -o ./public/tailwind.css --watch"
+  },
+  "name": "typerace",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

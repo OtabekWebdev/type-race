@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>by Otash360</title>
+    <link rel="stylesheet" href="./tailwind.css" />
+  </head>
+  <body>
+    <div class="hide hidden">
+      <div
+        class="road mb-2"
+        style="background: url('./img/road.png') center center / cover"
+      >
+        <div class="car -translate-y-2 translate-x-0 duration-100">
+          <div class="mark">You</div>
+          <img src="./img/car.png" width="150px" alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto border-2 h-screen flex items-center justify-center"
+    >
+      <div class="game_area w-full">
+        <div class="auth mx-auto md:w-1/3 justify-center flex">
+          <input
+            class="name_int w-9/12 p-2 outline-none border-green-400 border-b-2"
+            type="text"
+            placeholder="Sizning ismingizni kiriting..."
+          />
+          <button
+            class="name_btn duration-300 block ml-2 w-1/4 bg-yellow-400 active:bg-green-800 px-2 py-1 text-2xl rounded-lg"
+          >
+            Next
+          </button>
+        </div>
+        <div class="step_one hidden">
+          <div class="mx-auto w-1/2">
+            <div class="flex join">
+              <input
+                type="text"
+                placeholder="Enter room name"
+                id="room_name_int"
+                class="duration-300 w-9/12 p-2 block outline-none border-green-400 border-b-2"
+              />
+              <button
+                class="duration-300 block ml-2 w-1/4 bg-green-600 active:bg-green-800 px-2 py-1 text-3xl rounded-lg"
+                id="join_btn"
+              >
+                Join
+              </button>
+            </div>
+            <div class="flex create items-end">
+              <input
+                type="text"
+                placeholder="Enter room name"
+                id="room_name_int2"
+                class="duration-300 w-0 p-0 py-2 block outline-none border-transparent border-b-2"
+              />
+              <button
+                class="duration-300 mt-7 w-full block active:bg-blue-600 bg-blue-500 px-2 py-1 text-3xl rounded-lg"
+                id="create_btn"
+              >
+                Create
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hidden step_two">
+          <div
+            class="start_race_bg absolute top-0 left-0 z-30 bg-slate-950/90 flex justify-center items-center w-full h-full"
+          >
+            <div class="lights hidden">
+              <div
+                class="light rounded-full bg-slate-400 mx-1 w-12 h-12 border border-black"
+              ></div>
+              <div
+                class="light rounded-full bg-slate-400 mx-1 w-12 h-12 border border-black"
+              ></div>
+              <div
+                class="light rounded-full bg-slate-400 mx-1 w-12 h-12 border border-black"
+              ></div>
+            </div>
+            <button class="start_race_btn bg-yellow-400 p-2 font-bold">
+              Start
+            </button>
+          </div>
+          <div class="race_area relative"></div>
+          <div class="">
+            <p class="Text font-bold mt-4 text-2xl px-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatum eius dolor, provident ratione enim perferendis qui
+              fuga? Placeat iure at accusamus odit, aperiam ut veniam nisi
+              distinctio pariatur porro rem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+    <!-- Script -->
+  </body>
+</html>

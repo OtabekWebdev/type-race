@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.join.active input {
+  width: 0;
+  padding: 0;
+}
+.join.active button {
+  width: 100%;
+  margin: 0;
+}
+
+.create.active input {
+  width: 60%;
+  height: auto;
+  padding-left: 8px;
+  border-color: rgb(59, 130, 246);
+}
+.create.active button {
+  width: 40%;
+}
+
+.text.green {
+  color: green;
+  background: rgba(0, 0, 0, 0.26);
+}
+
+.container .road .car {
+  position: relative;
+  width: 150px;
+  /* width: min-c; */
+}
+.container .road .mark {
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px black;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
